@@ -101,14 +101,42 @@
         background: none
         cursor: pointer
     &__input
+        width: 245px
         border: none
         outline: none
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
         &::placeholder
-            font-family: Lato
+            font-family: Lato 
             font-style: normal
             font-weight: normal
             font-size: 14px
             line-height: 20px
+            color: $Grey-50
+            opacity: 1
+        &:-ms-input-placeholder
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            color: $Grey-50
+        &::-ms-input-placeholder
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            color: $Grey-50
+        &::-webkit-input-placeholder
+            font-size: 14px
+            color: $Grey-50
+        &:-moz-placeholder
+            font-size: 14px
+            color: $Grey-50
+        &::-moz-placeholder
+            font-size: 14px
             color: $Grey-50
 .subscribe
     display: flex

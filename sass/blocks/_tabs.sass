@@ -22,6 +22,7 @@
         font-family: Lato
         font-size: 14px
         line-height: 20px
+        letter-spacing: 0.5px
         text-transform: uppercase
         color: $Grey-100
     &__item
@@ -40,6 +41,8 @@
             border-bottom: none
         &--active
             background: $Grey-05
+    &__span
+        max-width: 212px
     &__icon
         vertical-align: top
         padding-left: 5px
@@ -87,7 +90,7 @@
         opacity: 0.4
     &__description
         &--pb-40
-            padding-bottom: 40px
+            padding-bottom: 37px
     &__label
         font-family: Lato
         font-size: 12px
@@ -103,12 +106,16 @@
             font-size: 40px
             line-height: 50px
             color: $White
+            max-width: 550px
+            margin-top: 25px
+            margin-bottom: 0
     &__read-more
         display: flex
         align-items: center
     &__link
         display: flex
         align-items: center
+        width: 138px
         background-color: $Blue-75
         border: none
         border-radius: 20px
@@ -149,7 +156,8 @@
         font-size: 12px
         line-height: 15px
         text-transform: uppercase
-        margin-bottom: 8px
+        letter-spacing: 0.5px
+        margin-bottom: 9px
         &--bluegreen
             color: $Bluegreen-75
         &--greyblue
