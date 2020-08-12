@@ -10,9 +10,21 @@
             &__title
                 font-size: 14px
     .tabs
+        &__title
+            padding: 10px 25px
+        &__item
+            padding: 10px 25px
         &__content
             width: 710px
-            height: auto
+            height: 464px
+        &__bg
+            height: 100%
+        &__author
+            &--pb-145
+                padding-bottom: 80px
+        &__description
+            &--pb-40
+                padding-bottom: 20px
 
 @media (max-width: 992px)
     .container
@@ -48,6 +60,37 @@
             &__block
                 justify-content: space-around
                 flex-wrap: wrap
+            &__item
+                padding: 15px 0 15px 15px
+    .tabs
+        &__margin
+            margin-top: -220px
+        &__content
+            width: 500px
+            height: 420px
+        &__bg
+            object-fit: cover
+        &__slider-wrapper
+            top: 25px
+            left: 30px
+        &__slide
+            &-title
+                font-size: 25px
+        &__description
+            &--pb-40
+                padding-bottom: 0
+        &__author
+            &--pb-145
+                padding-bottom: 110px
+        &__title
+            font-size: 12px
+        &__category
+            font-size: 10px
+            margin-bottom: 2px
+        &__item
+            font-size: 12px
+            padding: 9px 10px
+
 
 @media (max-width: 768px)
     .container
@@ -80,6 +123,7 @@
             right: 0
             bottom: 0
             top: 50px
+            z-index: 1
             &--visible
                 display: block
         &-menu
@@ -101,6 +145,45 @@
             padding: 10px 5px
             border-radius: 5px
             width: 100%
+    .top
+        &-news
+            &__item
+                padding: 10px 0 10px 10px
+            &__title
+                font-size: 12px
+            &__image
+                padding-left: 10px
+    .tabs
+        &__margin
+            flex-direction: column-reverse
+            margin-top: -250px
+        &__ul
+            display: flex
+        &__button
+            border-radius: 10px 10px 0 0
+        &__bg
+            border-radius: 0 0 10px 10px
+        &__content
+            width: 100%
+        &__title
+            text-align: center
+        &__item
+            border: 1px solid transparent
+            width: 100%
+            padding: 9px 0
+            justify-content: center
+            &--active
+                border: 1px solid $Grey-50
+                border-bottom-color: transparent
+        &__category
+            font-size: 13px
+            text-align: center
+        &__span
+            display: none
+    .modal
+        &__dialog
+            width: 518px
+            padding: 33px 45px
 
 @media (max-width: 576px)
     .navbar
@@ -113,14 +196,56 @@
         &-news
             &__title
                 font-size: 12px
+                text-align: center
             &__item
                 padding: 10px 0 5px 0
                 flex-direction: column-reverse
                 flex-basis: 50%
             &__image
                 padding: 0
+    .tabs
+        &__margin
+            margin-top: -170px
+        &__slide
+            &-title
+                font-size: 18px
+                line-height: normal
+        &__link
+            width: 120px
+            padding: 10px
+        &__slider
+            &-wrapper
+                left: 20px
+                width: 90%
+        &__description
+            &--pb-40
+                padding-bottom: 25px
+        &__name
+            font-size: 12px
+    .modal
+        &__dialog
+            width: 400px
+            padding: 42px 25px
 
-/** @media (min-width: 320px) and (max-width: 450px) **/
+@media (min-width: 320px) and (max-width: 450px)
+    .top
+        &-news
+            &__title
+                width: 124px
+                line-height: 20px
+    .tabs
+        &__read-more
+            display: flex
+            align-items: normal
+            flex-direction: column-reverse
+        &__video
+            margin-bottom: 10px
+        &__margin
+            margin-top: -150px
+    .modal
+        &__dialog
+            width: 281px
+            padding: 42px 15px
             
 
 /** @media (max-width: 576px) and (orientation: landscape) **/
