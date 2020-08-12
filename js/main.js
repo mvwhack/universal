@@ -59,7 +59,7 @@ $(document).ready(function () {
     // Воспроизведение видео в модальном окне
     $('.tabs__video-button').click(function(event){
         console.log($(event.target).attr('id'));
-        
+
         var idVideo = $(this).attr('id');
         var link = "https://www.youtube.com/embed/";
         $('.video').html('<iframe width="100%" height="300px" src="'+link+idVideo+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen"></iframe>');
