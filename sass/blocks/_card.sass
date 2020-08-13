@@ -1,0 +1,328 @@
+.card
+    background-color: $bg-color
+    padding-bottom: 60px
+    &-grid
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 30px
+    &-one
+        background-color: $White
+        border-radius: 10px
+        grid-row: 1 / 3
+        grid-column: 1 / 3
+        &__top
+            display: flex
+            padding: 15px 0 0 35px
+        &__right
+            min-width: 292px
+        &__category
+            font-family: Lato
+            font-size: 12px
+            line-height: 15px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            color: $Greyblue-75
+            margin-top: 20px
+            margin-bottom: 0
+        &__title
+            margin-top: 20px
+            margin-bottom: 25px
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 25px
+            line-height: 30px
+            color: $Grey-100
+        &__description
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: $Grey-85
+        &__bottom
+            display: flex
+            align-items: center
+            justify-content: center
+            padding: 10px 0
+            border-top: 1px solid $Grey-15
+        &__avatar
+            border-radius: 50%
+            margin-right: 10px
+            height: 30px
+            width: 30px
+        &__name
+            font-family: Lato
+            font-size: 14px
+            line-height: 20px
+            font-weight: bold
+            color: $Grey-100
+        &__comment
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: $Grey-85
+            margin-top: 0
+            margin-bottom: 0
+            margin-left: 5px
+            margin-right: 16px
+        &__icon
+            margin-right: 6px
+        &__score
+            display: flex
+            align-items: center
+        &__counter
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: $Grey-50
+    &-two
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        background-image: url(../img/card-two.png)
+        background-repeat: no-repeat
+        background-size: cover
+        border-radius: 10px
+        grid-column: 3 / 4
+        grid-row: 1 / 3
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            width: 100%
+            height: 100%
+            background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+            border-radius: 10px
+        &__label
+            font-family: Lato
+            font-size: 12px
+            line-height: 15px
+            color: $White
+            width: 66px
+            margin-top: 18px
+            margin-left: 18px
+            border-radius: 3px
+            padding: 5px 12px
+            background-color: $Green-75
+            position: relative
+        &__wrapper
+            padding: 0 35px 25px 25px
+            position: relative
+        &__category
+            font-family: Lato
+            font-size: 12px
+            line-height: 15px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            color: $Purple-25
+        &__title
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 25px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            color: $White
+            margin-top: 10px
+            margin-bottom: 15px
+        &__author
+            display: flex
+            align-items: center
+        &__avatar
+            border-radius: 50%
+            margin-right: 10px
+            height: 45px
+            width: 45px
+        &__name
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: $White
+            mix-blend-mode: normal
+            opacity: 0.85
+            margin-top: 0
+            margin-bottom: 2px
+        &__counter
+            display: flex
+            align-items: center
+        &__date
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: $White
+            mix-blend-mode: normal
+            opacity: 0.4
+            padding-right: 11px
+        &__icon
+            padding-right: 6px
+        &__score
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: $White
+            mix-blend-mode: normal
+            opacity: 0.4
+            padding-right: 11px
+        &__like
+            padding-right: 6px
+    &-three
+        background-color: $Greyblue-75
+        border-radius: 10px
+        grid-row: 1 / 5
+        grid-column: 4 / 5
+        &__title
+            font-family: Lato
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            color: $White
+            border-bottom: 1px solid $Greyblue-50
+            padding: 20px 25px
+            margin-top: 0
+            margin-bottom: 0
+        &__read
+            font-family: Lato
+            font-size: 14px
+            line-height: 20px
+            color: $White
+            text-align: center
+            border-top: 1px solid $Greyblue-50
+            padding: 11px 0 14px
+            margin-top: 0
+            margin-bottom: 0
+        &__wrapper
+            padding: 0 25px 0 25px
+    &-quote
+        position: relative
+        &__margin
+            margin-top: 35px
+        &::before
+            content: ''
+            background-image: url(../img/quote.svg)
+            background-repeat: no-repeat
+            position: absolute
+            top: 0
+            left: 0
+            width: 40px
+            height: 40px
+            z-index: 1
+        &__title
+            position: relative
+            z-index: 2
+            margin-top: 0
+            margin-bottom: 0
+            padding-top: 10px
+            padding-left: 9px
+            padding-bottom: 15px
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 25px
+            color: $White
+        &__author
+            display: flex
+            align-items: center
+            padding-bottom: 39px
+            border-bottom: 1px solid $Greyblue-50
+            &--bb
+                border-bottom: none
+        &__avatar
+            border-radius: 50%
+            margin-left: 10px
+            margin-right: 10px
+        &__desc
+            display: flex
+            flex-direction: column
+        &__name
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: $Greyblue-25
+            padding-bottom: 2px
+        &__position
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: $Greyblue-25
+    &-four
+        background-color: $White
+        border-radius: 10px
+        grid-column: 1 / 2
+        grid-row: 3 / 5
+        &__title
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 25px
+            color: $Grey-100
+            margin-top: 0
+            margin-bottom: 0
+            padding: 15px 25px 30px 25px
+        &__image
+            border-radius: 10px 10px 0 0
+    &-five
+        grid-row: 3 / 4
+        grid-column: 2 / 3
+    &-six
+        grid-row: 3 / 4
+        grid-column: 3 / 4
+    &-seven
+        grid-row: 4 / 5
+        grid-column: 2 / 3
+    &-eight
+        grid-row: 4 / 5
+        grid-column: 3 / 4
+    &-info
+        background-color: $White
+        border-radius: 10px
+        height: 100%
+        &__wrapper
+            padding: 25px
+        &__title
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 25px
+            color: $Grey-100
+            margin-top: 0
+            margin-bottom: 5px
+        &__desc
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: $Grey-85
+            margin-top: 0
+            margin-bottom: 10px
+        &__date
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: $Grey-50
