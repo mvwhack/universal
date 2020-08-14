@@ -62,7 +62,8 @@ $(document).ready(function () {
 
         var idVideo = $(this).attr('id');
         var link = "https://www.youtube.com/embed/";
-        $('.video').html('<iframe width="100%" height="300px" src="'+link+idVideo+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen"></iframe>');
+        var autoplay = "?autoplay=1";
+        $('.video').html('<iframe width="100%" height="300px" src="'+link+idVideo+autoplay+'"frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen"></iframe>');
     });
 
 });
