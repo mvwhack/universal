@@ -81,6 +81,8 @@
             font-size: 12px
             line-height: 15px
             color: $Grey-50
+        &__image
+            width: 100%
     &-two
         display: flex
         flex-direction: column
@@ -156,38 +158,6 @@
             opacity: 0.85
             text-decoration: none
             padding-bottom: 2px
-        &__counter
-            display: flex
-            align-items: center
-        &__date
-            min-width: 41px
-            margin-right: 11px
-            font-family: Lato
-            font-style: normal
-            font-weight: normal
-            font-size: 12px
-            line-height: 15px
-            color: $White
-            mix-blend-mode: normal
-            opacity: 0.4
-            text-decoration: none
-        &__icon
-            padding-right: 6px
-        &__score
-            display: flex
-            align-items: center
-            text-decoration: none
-            font-family: Lato
-            font-style: normal
-            font-weight: normal
-            font-size: 12px
-            line-height: 15px
-            color: $White
-            mix-blend-mode: normal
-            opacity: 0.4
-            padding-right: 11px
-        &__like
-            padding-right: 6px
     &-three
         background-color: $Greyblue-75
         border-radius: 10px
@@ -335,3 +305,35 @@
             font-size: 12px
             line-height: 15px
             color: $Grey-50
+.counter
+    display: flex
+    align-items: center
+    &__date
+        min-width: 41px
+        margin-right: 11px
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $White
+        mix-blend-mode: normal
+        opacity: 0.4
+        text-decoration: none
+    &__icon
+        padding-right: 6px
+    &__score
+        display: flex
+        align-items: center
+        text-decoration: none
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $White
+        mix-blend-mode: normal
+        opacity: 0.4
+        padding-right: 11px
+    &__like
+        padding-right: 6px

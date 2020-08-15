@@ -1,0 +1,205 @@
+.preview
+    background-color: $bg-color
+    &-wrapper
+        display: flex
+        padding-top: 60px
+        padding-bottom: 60px
+    &-left
+        background-color: $White
+        border-radius: 10px
+        padding: 0 25px
+        &__margin
+            margin-right: 30px
+        &__wrapper
+            display: flex
+            padding: 25px 0
+            border-bottom: 1px solid $Grey-15
+            &--last
+                border-bottom: none
+        &__image
+            width: 100%
+        &__logo
+            display: flex
+            align-items: center
+            min-width: 335px
+            min-height: 195px
+        &__description
+            padding-left: 25px
+            position: relative
+        &__category
+            font-family: Lato
+            font-size: 12px
+            line-height: 15px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            margin-top: 0
+            margin-bottom: 0
+            padding-top: 5px
+            padding-bottom: 15px
+            &--Blue-75
+                color: $Blue-75
+            &--Bluegreen-75
+                color: $Bluegreen-75
+            &--Red-75
+                color: $Red-75
+            &--Purple-75
+                color: $Purple-75
+        &__title
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 25px
+            color: $Grey-100
+            margin-top: 0
+            margin-bottom: 0
+            padding-bottom: 10px
+        &__text
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: $Grey-85
+            margin-top: 0
+            margin-bottom: 0
+            padding-bottom: 20px
+    &-bookmark
+        position: absolute
+        top: 0
+        right: 0
+        cursor: pointer
+    &-right
+        background-color: $White
+        border-radius: 10px
+        max-width: 263px
+        height: max-content
+        flex-shrink: 0
+        &__wrapper
+            padding: 0 25px
+        &__title
+            padding: 20px 25px
+            margin-top: 0
+            margin-bottom: 0
+            font-family: Lato
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            color: $Grey-100
+            border-bottom: 1px solid $Grey-15
+        &__item
+            display: flex
+            align-items: center
+            padding: 17px 0
+            border-bottom: 1px solid $Grey-15
+            position: relative
+            &--one
+                &::before
+                    position: absolute
+                    content: ''
+                    right: 0
+                    width: 41px
+                    height: 55px
+                    background-image: url(../img/1.svg)
+                    background-repeat: no-repeat
+            &--two
+                &::before
+                    position: absolute
+                    content: ''
+                    right: 0
+                    width: 41px
+                    height: 55px
+                    background-image: url(../img/2.svg)
+                    background-repeat: no-repeat
+            &--three
+                &::before
+                    position: absolute
+                    content: ''
+                    right: 0
+                    width: 41px
+                    height: 55px
+                    background-image: url(../img/3.svg)
+                    background-repeat: no-repeat
+            &--four
+                &::before
+                    position: absolute
+                    content: ''
+                    right: 0
+                    width: 41px
+                    height: 55px
+                    background-image: url(../img/4.svg)
+                    background-repeat: no-repeat
+            &--five
+                &::before
+                    position: absolute
+                    content: ''
+                    right: 0
+                    width: 41px
+                    height: 55px
+                    background-image: url(../img/5.svg)
+                    background-repeat: no-repeat
+            &--six
+                &::before
+                    position: absolute
+                    content: ''
+                    right: 0
+                    width: 41px
+                    height: 55px
+                    background-image: url(../img/6.svg)
+                    background-repeat: no-repeat
+            &--last
+                border-bottom: none
+                &::before
+                    position: absolute
+                    content: ''
+                    right: 0
+                    width: 41px
+                    height: 55px
+                    background-image: url(../img/7.svg)
+                    background-repeat: no-repeat
+        &__subtitle
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: $Grey-85
+            margin-top: 0
+            margin-bottom: 5px
+        &__time
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: $Grey-50
+            margin-top: 0
+            margin-bottom: 0
+        &__icon
+            width: 60px
+            height: 60px
+            margin-right: 10px
+        &__link
+            padding: 11px 0 14px 0
+            border-top: 1px solid $Grey-15
+            text-align: center
+        &__read
+            font-family: Lato
+            font-weight: bold
+            font-size: 14px
+            line-height: 20px
+            color: $Grey-100
+            text-decoration: none
+            
+            
+.counter
+        &__date
+            &--previwe
+                color: $Grey-50
+                opacity: 1
+        &__score
+            &--previwe
+                color: $Grey-50
+                opacity: 1
+            
