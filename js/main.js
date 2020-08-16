@@ -65,5 +65,23 @@ $(document).ready(function () {
         var autoplay = "?autoplay=1";
         $('.video').html('<iframe width="100%" height="300px" src="'+link+idVideo+autoplay+'"frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen"></iframe>');
     });
-
+    
+    var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: 'true'
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+    });
 });
+

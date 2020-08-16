@@ -8,6 +8,7 @@
     &-one
         background-color: $White
         border-radius: 10px
+        overflow: hidden
         grid-row: 1 / 3
         grid-column: 1 / 3
         &__top
@@ -83,6 +84,7 @@
             color: $Grey-50
         &__image
             width: 100%
+            height: 100%
     &-two
         display: flex
         flex-direction: column
@@ -118,6 +120,11 @@
             padding: 5px 12px
             background-color: $Green-75
             position: relative
+            &--bottom
+                background-color: $Red-75
+                width: 45px
+                margin-bottom: 0
+                margin-right: 0
         &__wrapper
             padding: 0 35px 25px 25px
             position: relative
@@ -305,6 +312,91 @@
             font-size: 12px
             line-height: 15px
             color: $Grey-50
+    &-bottom
+        background-color: $Grey-100
+        padding-top: 60px
+        padding-bottom: 60px
+        &__one
+            display: flex
+            background-color: $Greyblue-50
+            grid-column: 3 / 5
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                top: 18px
+                right: 30px
+                width: 275px
+                height: 350px
+                background-image: url(../img/card-bottom.png)
+                background-size: cover
+                background-position: center
+                background-repeat: no-repeat
+            &-title
+                max-width: 243px
+                margin-bottom: 15px
+                position: relative
+        &__description
+            width: 213px
+            margin-top: 0
+            margin-bottom: 25px
+            position: relative
+        &__top
+            padding: 15px 30px 50px 35px
+        &__six
+            grid-column: 4 / 5
+        &__five
+            grid-column: 3 / 4
+        &__two
+            display: block
+            background-image: url(../img/card-bottom-slider.png)
+            width: 100%
+            height: 100%
+        &__wrapper
+            padding: 8px 50px 0 50px
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__author
+            flex-direction: column
+        &__avatar
+            margin-right: 0
+            margin-bottom: 8px
+        &__name
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: $White
+            mix-blend-mode: normal
+            opacity: 0.4
+        &__title
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 40px
+            line-height: 50px
+            letter-spacing: normal
+            text-transform: none
+            text-align: center
+            margin-top: 0
+            margin-bottom: 0
+            padding-top: 30px
+            padding-bottom: 45px
+        &__link
+            margin-right: 0
+            padding: 10px 25px 10px 20px
+        &__icon
+            margin-right: 11px
+        &__counter
+            margin-left: 5px
+            color: $Blue-25
+        &__right
+            display: none
+            min-width: 275px
+        &__slider
+            bottom: 40px
 .counter
     display: flex
     align-items: center
@@ -337,3 +429,18 @@
         padding-right: 11px
     &__like
         padding-right: 6px
+
+.swiper-container
+    grid-row: 1 / 4
+    grid-column: 1 / 3
+    max-width: 100%
+
+.swiper
+    &-pagination
+        &-bullet
+            background: #D9DADB
+            &-active
+                background: $White
+            
+.swiper-container-horizontal>.swiper-pagination-bullets
+    bottom: 40px
