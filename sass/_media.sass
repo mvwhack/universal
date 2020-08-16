@@ -316,6 +316,8 @@
             &--active
                 border: 1px solid $Grey-50
                 border-bottom-color: transparent
+                &::before
+                    display: none
         &__category
             font-size: 13px
             text-align: center
@@ -374,6 +376,12 @@
     .swiper-container
         grid-row: 3 / 5
         grid-column: 1 / 5
+    .newsletter
+        &__title
+            font-size: 32px
+        &__wrapper
+            padding-top: 40px
+            padding-bottom: 40px
 
 @media (max-width: 576px)
     .navbar
@@ -499,6 +507,19 @@
             padding-bottom: 35px
     .swiper-container
         grid-row: 2 / 3
+    .newsletter
+        &__wrapper
+            padding-top: 30px
+            padding-bottom: 35px
+        &__title
+            font-size: 25px
+        &__form
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            height: 95px
+        &__input
+            margin-right: 0
 
 @media (min-width: 320px) and (max-width: 450px)
     .top
@@ -573,7 +594,14 @@
                 min-height: auto
             &__title
                 font-size: 16px
-    
+    .newsletter
+        &__wrapper
+            padding-top: 20px
+            padding-bottom: 30px
+        &__title
+            font-size: 18px
+        &__input
+            width: auto
             
 
 @media (max-width: 768px) and (orientation: landscape)
