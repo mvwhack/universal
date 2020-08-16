@@ -49,7 +49,6 @@
     &__content
         display: none
         width: 877px
-        height: 570px
         position: relative
         border-radius: 10px 0px 0px 10px
         overflow: hidden
@@ -62,15 +61,36 @@
             bottom: 0
             width: 100%
             height: 100%
-            background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(Image.png)
+            background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+        &--food
+            background-image: url(../img/slider-image-1.png)
+            background-repeat: no-repeat
+            background-size: cover
+        &--cars
+            background-image: url(../img/slider-image-2.png)
+            background-repeat: no-repeat
+            background-size: cover
+        &--movies
+            background-image: url(../img/slider-image-3.png)
+            background-repeat: no-repeat
+            background-size: cover
+        &--nfl
+            background-image: url(../img/slider-image-4.png)
+            background-repeat: no-repeat
+            background-size: cover
+        &--reviews
+            background-image: url(../img/slider-image-5.png)
+            background-repeat: no-repeat
+            background-size: cover
         &--active
             display: block
     &__slider
         &-wrapper
-            position: absolute
-            top: 55px
-            left: 55px
-            width: 90%
+            position: relative
+            z-index: 1
+            padding-top: 55px
+            padding-left: 55px
+            padding-bottom: 95px
     &__author
         display: flex
         align-items: center
@@ -186,7 +206,7 @@
     &__link
         display: flex
         align-items: center
-        width: 138px
+        min-width: 138px
         background-color: $Blue-75
         border: none
         border-radius: 20px
@@ -200,4 +220,6 @@
         text-decoration: none
         &-arrow
             padding-left: 8px
+    &__tabs
+        min-height: 56px
             

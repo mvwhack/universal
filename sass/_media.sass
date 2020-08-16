@@ -16,7 +16,6 @@
             padding: 10px 25px
         &__content
             width: 710px
-            height: 464px
         &__bg
             height: 100%
             width: 100%
@@ -106,6 +105,7 @@
                 display: none
             &__title
                 font-size: 16px
+                width: 200px
             &__block
                 justify-content: space-around
                 flex-wrap: wrap
@@ -116,12 +116,13 @@
             margin-top: -220px
         &__content
             width: 500px
-            height: 420px
         &__bg
             object-fit: cover
-        &__slider-wrapper
-            top: 25px
-            left: 30px
+        &__slider
+            &-wrapper
+                padding-top: 30px
+                padding-left: 20px
+                padding-bottom: 35px
         &__slide
             &-title
                 font-size: 25px
@@ -286,12 +287,17 @@
                 padding: 10px 0 10px 10px
             &__title
                 font-size: 12px
+                width: 155px
             &__image
                 padding-left: 10px
     .tabs
+        &__slider
+            &-wrapper
+                padding-right: 20px
         &__margin
             flex-direction: column-reverse
             margin-top: -250px
+            width: 100%
         &__ul
             display: flex
         &__button
@@ -399,13 +405,19 @@
             padding: 10px
         &__slider
             &-wrapper
-                left: 20px
-                width: 90%
+                
         &__description
             &--pb-40
                 padding-bottom: 25px
         &__name
             font-size: 12px
+    .read
+        &-more
+            &__tabs
+                justify-content: space-between
+                flex-direction: column-reverse
+                align-items: end
+                min-height: 105px
     .modal
         &__dialog
             width: 400px
