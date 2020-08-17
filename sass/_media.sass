@@ -214,6 +214,24 @@
         grid-row: 3 / 5
         grid-column: 1 / 3
 
+    .footer
+        &-top
+            &__item
+                font-size: 12px
+        &-bottom
+            &__item
+                padding-right: 23px
+                font-size: 12px
+            &__image
+                padding-right: 15px
+            &__icon
+                padding-left: 5px
+        &-copyright
+            &__text
+                font-size: 11px
+                &--left
+                    max-width: 480px
+
 @media (max-width: 768px)
     .container
         max-width: 562px
@@ -382,6 +400,41 @@
         &__wrapper
             padding-top: 40px
             padding-bottom: 40px
+    .footer
+        &-top
+            flex-wrap: wrap
+            padding-bottom: 15px
+            &__menu
+                &--news
+                    width: 50%
+                &--arts
+                    width: 50%
+                &--travel
+                    width: 50%
+                &--sports
+                    width: 50%
+                &--tech
+                    width: 50%
+                &--moneys
+                    width: 50%
+        &-bottom
+            flex-direction: column
+            &__menu
+                flex-direction: column
+            &__image
+                padding-right: 0
+                padding-bottom: 15px
+            &__list
+                padding-bottom: 15px
+            &__item
+                font-size: 10px
+        &-copyright
+            padding-top: 10px
+            padding-bottom: 15px
+            &__text
+                font-size: 10px
+                &--left
+                    max-width: 390px
 
 @media (max-width: 576px)
     .navbar
@@ -520,6 +573,9 @@
             height: 95px
         &__input
             margin-right: 0
+    .footer
+        &-copyright
+            flex-direction: column
 
 @media (min-width: 320px) and (max-width: 450px)
     .top
@@ -600,8 +656,21 @@
             padding-bottom: 30px
         &__title
             font-size: 18px
+            margin-bottom: 10px
         &__input
             width: auto
+    .footer
+        &-bottom
+            &__list
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-around
+            &__item
+                padding-right: 0
+                padding-bottom: 10px
+                width: 35%
+            &__icon
+                padding-left: 0
             
 
 @media (max-width: 768px) and (orientation: landscape)
