@@ -1,11 +1,13 @@
 $(document).ready(function () {
 
+    // Меню гамбургер для мобильной версии
     var menuButton = $(".navbar-top__hamburger");
     menuButton.on('click', function() {
         $(".navbar__wrapper").toggleClass('navbar__wrapper--visible');
         $("body").toggleClass("scroll-hidden");
     });
 
+    // Таб слайдер
     var tabsItem = $(".tabs__item");
     var tabsContent = $(".tabs__content");
 
@@ -17,7 +19,7 @@ $(document).ready(function () {
        $(activeContent).addClass("tabs__content--active");
     });
 
-
+    // Модальное окно
     var modalButton = $("[data-toggle=modal]");
     var closeModalButton = $(".modal__close");
     modalButton.on("click", openModal);
@@ -66,6 +68,7 @@ $(document).ready(function () {
         $('.video').html('<iframe width="100%" height="300px" src="'+link+idVideo+autoplay+'"frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen"></iframe>');
     });
     
+    // Слайдер внизу сайта
     var mySwiper = new Swiper('.swiper-container', {
         // Optional parameters
         direction: 'horizontal',
@@ -83,5 +86,17 @@ $(document).ready(function () {
           el: '.swiper-scrollbar',
         },
     });
+
+    // Валидация форм
+    $('.newsletter__form').validate({
+        errorClass: "invalid",
+        messages: {
+            email: {
+              required: "We need your email address to contact you",
+              email: "Your email address must be in the format of name@domain.com"
+            }
+        }
+    });
+
 });
 
