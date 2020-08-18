@@ -92,6 +92,11 @@
             font-size: 20px
             line-height: 26px
             width: 375px
+    .other
+        &-news
+            max-width: 230px
+        &-title
+            font-size: 14px
 
 @media (max-width: 992px)
     .container
@@ -296,6 +301,13 @@
             margin-right: 25px
         &__name
             font-size: 16px
+    .other
+        &-wrapper
+            flex-wrap: wrap
+            justify-content: space-evenly
+        &-news
+            max-width: 263px
+            padding-bottom: 20px
 
 @media (max-width: 768px)
     .container
@@ -549,6 +561,11 @@
             padding-right: 10px
         &-name
             font-size: 12px
+    .other
+        &-wrapper
+            justify-content: space-between
+        &-news
+            max-width: 250px
 
 @media (max-width: 576px)
     .navbar
@@ -758,6 +775,17 @@
         &-wrapper
             display: flex
             padding-bottom: 20px
+    .paragraph
+        &__support
+            &-wrapper
+                justify-content: center
+    .other
+        &-wrapper
+            justify-content: center
+            padding-top: 30px
+            padding-bottom: 0
+        &-news
+            max-width: 263px
         
 
 @media (min-width: 320px) and (max-width: 450px)
