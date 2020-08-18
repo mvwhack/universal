@@ -68,17 +68,27 @@ $(document).ready(function () {
         $('.video').html('<iframe width="100%" height="300px" src="'+link+idVideo+autoplay+'"frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen"></iframe>');
     });
     
-    // Слайдер внизу сайта
+    // Слайдер
     var mySwiper = new Swiper('.swiper-container', {
         // Optional parameters
         direction: 'horizontal',
         loop: true,
+
+        autoplay: {
+            delay: 3000,
+        },
       
         // If we need pagination
         pagination: {
           el: '.swiper-pagination',
           type: 'bullets',
           clickable: 'true'
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.slider-button--next',
+            prevEl: '.slider-button--prev',
         },
       
         // And if we need scrollbar

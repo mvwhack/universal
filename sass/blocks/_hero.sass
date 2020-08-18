@@ -1,0 +1,106 @@
+.hero
+    background-image: url(../img/hero.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    position: relative
+    &-two
+        background-image: url(../img/hero-2.png)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        position: relative
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+    &-container
+        padding-top: 60px
+        padding-bottom: 60px
+        position: relative
+        &__wrapper
+            display: flex
+            align-items: center
+        &__top
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding-bottom: 52px
+        &__category
+            font-family: Lato
+            font-size: 12px
+            line-height: 15px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            color: $Blue-75
+            margin-top: 0
+            margin-bottom: 0
+        &__button
+            display: flex
+            align-items: center
+        &__link
+            display: flex
+            align-items: center
+            font-family: Lato
+            font-size: 14px
+            line-height: 20px
+            color: $White
+            text-decoration: none
+        &__back
+            margin-right: 32px
+        &__home
+            margin-right: 6px
+        &__prevent
+            margin-right: 20px
+        &__prev
+            margin-right: 8px
+        &__next
+            margin-left: 8px
+        &__title
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 55px
+            line-height: 70px
+            color: $White
+            max-width: 750px
+            margin-top: 0
+            margin-bottom: 30px
+        &__description
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 30px
+            color: $White
+            mix-blend-mode: normal
+            opacity: 0.85
+            max-width: 556px
+            margin-bottom: 60px
+.counter
+    &-wrapper
+        display: flex
+    &__date
+        &-hero
+            display: flex
+            align-items: center
+    &__clock
+        margin-right: 6px
+    &__share
+        font-family: Lato
+        font-size: 14px
+        line-height: 20px
+        color: $White
+        text-decoration: none
+        padding: 10px 25px 10px 21px
+        border: 1px solid $White
+        opacity: 0.85
+        border-radius: 20px
+    &__arrow
+        margin-right: 11px

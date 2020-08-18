@@ -1,0 +1,311 @@
+.paragraph
+    padding-top: 60px
+    padding-bottom: 30px
+    &-next
+        padding-top: 45px
+    &-wrapper
+        display: flex
+        justify-content: space-between
+    &__text
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 30px
+        color: $Grey-85
+        margin-top: 0
+        margin-bottom: 30px
+        max-width: 623px
+        &--last
+            margin-bottom: 15px
+    &__first
+        &:first-letter
+            font-family: Lato
+            font-size: 100px
+            line-height: 75px
+            font-weight: bold
+            color: $Blue-75
+            float: left
+            padding-top: 5px 
+            padding-right: 10px
+    &__title
+        font-family: Roboto Slab
+        font-style: normal
+        font-weight: bold
+        font-size: 25px
+        line-height: 30px
+        color: $Grey-100
+        margin-top: 45px
+        margin-bottom: 30px
+    &-right
+        display: flex
+        flex-direction: column
+        align-items: center
+        background: #FFFFFF
+        border: 1px solid $Grey-15
+        border-radius: 10px
+        width: 263px
+        height: max-content
+        flex-shrink: 0
+        margin-top: -150px
+        z-index: 1
+        &__avatar
+            margin-top: 35px
+            margin-bottom: 15px
+            border-radius: 50%
+        &__name
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 25px
+            color: $Grey-100
+            margin-top: 0
+            margin-bottom: 5px
+            &--two
+                margin-bottom: 20px
+        &__hobby
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: $Grey-85
+            margin-top: 0
+            margin-bottom: 15px
+        &__counter
+            font-family: Lato
+            font-size: 14px
+            line-height: 20px
+            font-weight: bold
+            color: $Grey-100
+            margin-top: 0
+            margin-bottom: 25px
+        &__social
+            padding-bottom: 34px
+        &__icon
+            margin-left: 5px
+            margin-right: 5px
+        &__follow
+            font-family: Lato
+            font-size: 14px
+            line-height: 20px
+            font-weight: bold
+            color: $Grey-100
+            margin-top: 0
+            margin-bottom: 0
+            padding: 12px 0
+            border-top: 1px solid $Grey-15
+            width: 100%
+            text-align: center
+            text-decoration: none
+        &__two
+            &-block
+                align-items: flex-start
+                border: none
+                margin-top: 150px
+        &__image
+            width: 100%
+            height: 100%
+            border-radius: 10px
+            overflow: hidden
+        &__title
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 25px
+            color: $Grey-100
+            margin-top: 15px
+            margin-bottom: 5px
+        &__description
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: $Grey-85
+            margin-top: 0
+            margin-bottom: 20px
+    &-tags
+        display: flex
+        align-items: center
+        padding-top: 30px
+        padding-bottom: 30px
+        &__link
+            font-family: Lato
+            font-size: 14px
+            line-height: 20px
+            font-weight: bold
+            color: $Grey-100
+            text-decoration: none
+            padding: 5px 15px
+            border: 1px solid $Grey-15
+            border-radius: 5px
+            margin-right: 10px
+    &__support
+        border-top: 1px solid $Grey-15
+        &-wrapper
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            justify-content: center
+        &-title
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 25px
+            line-height: 30px
+            color: $Grey-100
+            margin-top: 30px
+            margin-bottom: 25px
+        &-button
+            display: flex
+            align-items: center
+            margin-right: 10px
+            margin-bottom: 15px
+            padding: 10px 25px 10px 20px
+            border-radius: 20px
+            font-family: Lato
+            font-size: 14px
+            line-height: 20px
+            color: $White
+            text-decoration: none
+            &--like
+                background-color: $Red-75
+            &--facebook
+                background-color: $facebook
+            &--twitter
+                background-color: $twitter
+            &--more
+                padding: 0
+
+.counter
+    &__paragraph
+        color: $Grey-50
+        opacity: 1
+    &__eye
+        margin-right: 5px
+    &__comment
+        margin-right: 6px
+.quote
+    display: flex
+    &__size
+        margin-top: 60px
+        margin-bottom: 45px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            top: -20px
+            left: -20px
+            width: 70px
+            height: 70px
+            background-image: url(../img/quote-page.svg)
+            background-repeat: no-repeat
+            background-size: cover
+    &__text
+        position: relative
+    &__title
+        font-family: Roboto Slab
+        font-style: normal
+        font-weight: bold
+        font-size: 25px
+        line-height: 30px
+        color: $Grey-100
+        margin-top: 0
+        margin-bottom: 0
+        width: 458px
+        margin-right: 30px
+    &__avatar
+        border-radius: 50%
+        margin-bottom: 10px
+    &__name
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 30px
+        color: $Grey-85
+        margin-top: 0
+        margin-bottom: 0
+    &__work
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: $Grey-50
+        margin-top: 0
+        margin-bottom: 0
+
+// Стили для слайдера в тексте
+.slider
+    &-wrapper
+        border: 1px solid $Grey-15
+        border-radius: 10px
+        overflow: hidden
+    &-info
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &-title
+        margin-top: 0
+        margin-bottom: 0
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: $Grey-85
+        padding-left: 35px
+    &-author
+        display: flex
+        align-items: center
+        border-left: 1px solid $Grey-15
+        padding-top: 12px
+        padding-bottom: 13px
+        padding-left: 30px
+        padding-right: 35px
+    &-foto
+        border-radius: 50%
+        margin-right: 10px
+    &-name
+        margin-top: 0
+        margin-bottom: 0
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: $Grey-85
+    &-work
+        margin-top: 0
+        margin-bottom: 0
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $Grey-50
+.swiper
+    &-container
+        position: relative
+.slider
+    &-button
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        width: 60px
+        height: 60px
+        border: none
+        outline: none
+        background: none
+        cursor: pointer
+        z-index: 1
+        &--prev
+            left: 35px
+            background-image: url(../img/slider-arrow-prev.svg)
+        &--next
+            right: 35px
+            background-image: url(../img/slider-arrow-next.svg)
