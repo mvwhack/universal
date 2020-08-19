@@ -95,6 +95,11 @@ $(document).ready(function () {
         scrollbar: {
           el: '.swiper-scrollbar',
         },
+
+        keyboard: {
+            enabled: true,
+            onlyInViewport: false,
+        },
     });
 
     // Валидация форм
@@ -104,9 +109,58 @@ $(document).ready(function () {
             email: {
               required: "We need your email address to contact you",
               email: "Your email address must be in the format of name@domain.com"
+            },
+            textarea: {
+                required: "We need your email address to contact you",
             }
         }
     });
 
+    $('.comments-added__form').validate({
+        errorClass: "invalid",
+        messages: {
+            textarea: {
+                required: "The text must be at least 100 characters long",
+            }
+        }
+    });
+
+
+    // Показать/скрыть коменнтарии
+    $('.comments-button__other').click(function(){
+		$('.comments-hidden').toggleClass('hide');	
+		if ($('.comments-hidden').hasClass('hide')) {
+			$('.content_toggle').html('Подробнее');
+		} else {
+			$('.content_toggle').html('Скрыть');
+		}		
+		return false;
+    });	
+    
+    // Имитация добавления в закладки на главной странице
+    $(".preview-bookmark__img").on("click", function(event) {
+        var img1 = "img/bookmark.svg";
+        var img2 = "img/bookmark-red.svg";
+   
+        $(this).attr(
+           "src", 
+           $(this).attr("src") ===img1 ? img2 : img1
+        );
+        event.preventDefault();
+        return false;
+     });
+
+     // Имитация добавления в закладки на остальных страницах
+    $(".hero-add").on("click", function(event) {
+        var img1 = "img/bookmark.svg";
+        var img2 = "img/bookmark-red.svg";
+   
+        $(this).attr(
+           "src", 
+           $(this).attr("src") ===img1 ? img2 : img1
+        );
+        event.preventDefault();
+        return false;
+     });
 });
 

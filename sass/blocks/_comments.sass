@@ -1,0 +1,201 @@
+.comments
+    background: $White
+    &-wrapper
+        max-width: 750px
+        &__ml
+            margin-left: 98px
+    &-header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-top: 88px
+        padding-bottom: 29px
+    &-title
+        font-family: Roboto Slab
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 50px
+        color: $Grey-100
+        margin-top: 0
+        margin-bottom: 0
+        &__mini
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 40px
+            line-height: 50px
+            text-transform: uppercase
+            color: $Grey-50
+    &-button
+        font-family: Lato
+        font-size: 14px
+        line-height: 20px
+        font-weight: bold
+        color: $Grey-100
+        text-decoration: none
+        border: 1px solid $Grey-15
+        border-radius: 20px
+        padding: 9px 24px 10px 18px
+        display: flex
+        align-items: center
+        &__other
+            justify-content: center
+            padding: 14px 24px 14px 18px
+
+    &-icon
+        padding-right: 10px
+    &-first
+        display: flex
+        border-top: 1px solid $Grey-15
+        padding-top: 20px
+        padding-bottom: 25px
+        &__avatar
+            border-radius: 50%
+            margin-right: 15px
+    &-commit
+        max-width: 563px
+        &__last
+            max-width: 562px
+    &-last
+        display: flex
+        border-top: 1px solid $Grey-15
+        padding-top: 20px
+        padding-bottom: 24px
+        padding-left: 90px
+        &__avatar
+            border-radius: 50%
+            margin-right: 15px
+    &-name
+        margin-top: 0
+        margin-bottom: 10px
+        font-family: Roboto Slab
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 25px
+        color: $Grey-100
+    &-date
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $Grey-50
+        margin-left: 10px
+    &-desc
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 30px
+        color: $Grey-85
+        margin-top: 0
+        margin-bottom: 14px
+    &-read
+        padding-bottom: 60px
+    &-hidden
+        overflow: hidden
+        position: relative
+    &-added
+        display: flex
+        padding: 30px 40px 35px 30px
+        border-radius: 10px
+        background: $Grey-05
+        &__author
+            padding-top: 40px
+            padding-right: 19px
+        &__image
+            border-radius: 50%
+        &__title
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 25px
+            color: $Grey-100
+            margin-top: 0
+            margin-bottom: 15px
+        &__form
+            display: flex
+            flex-direction: column
+            position: relative
+        &__textarea
+            border: 1px solid $Grey-15
+            border-radius: 5px
+            outline: none
+            width: 584px
+            height: 130px
+            resize: none
+            margin-bottom: 15px
+        &__button
+            display: flex
+            align-items: center
+            border-radius: 20px
+            background-color: $Blue-75
+            color: $White
+            font-family: Lato
+            font-size: 14px
+            line-height: 20px
+            font-weight: bold
+            border: none
+            outline: none
+            cursor: pointer
+            padding: 10px 25px
+            max-width: 115px
+        &__arrow
+            margin-left: 8px
+.hide
+    height: 0
+    &:after
+        content: ''
+        display: block
+        height: 100px
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 0
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 75%)
+        
+.counter
+    &-wrapper
+        display: flex
+        align-items: center
+    &__comment
+        display: flex
+        align-items: center
+        font-family: Lato
+        font-size: 12px
+        line-height: 15px
+        font-weight: bold
+        color: $Grey-100
+        text-decoration: none
+        &-mb
+            margin-right: 0
+    &__count
+        &--green
+            font-family: Lato
+            font-size: 12px
+            line-height: 15px
+            color: $Green-75
+            text-decoration: none
+        &--red
+            font-family: Lato
+            font-size: 12px
+            line-height: 15px
+            color: $Red-75
+            text-decoration: none
+        &--null
+            font-family: Lato
+            font-size: 12px
+            line-height: 15px
+            color: $Grey-50
+            text-decoration: none
+    &__like
+        &--comment
+            padding-right: 0
+            margin-left: 16px
+            margin-right: 10px
+    &__dislike
+        margin-left: 10px
+        margin-top: 4px
