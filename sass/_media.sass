@@ -119,6 +119,8 @@
                 margin-right: 5px
             &__slogan
                 max-width: 132px
+            &__link
+                margin-left: 0
         &-menu
             &__item
                 font-size: 12px
@@ -419,6 +421,7 @@
         &__title
             text-align: center
             font-size: 14px
+            border-bottom: none
         &__item
             border: 1px solid transparent
             width: 100%
@@ -969,6 +972,14 @@
                 display: none
             &__textarea
                 width: 260px
+
+
+@media (hover: hover) and (pointer: fine)
+    .read-more
+        &__link
+            &:hover
+                transform: scale(1.1)
+    
 
 
 @media (max-width: 768px) and (orientation: landscape)

@@ -40,7 +40,6 @@
         &:last-child
             border-bottom: none
         &--active
-            background: $Grey-05
             position: relative
             &::before
                 content: ''
@@ -230,8 +229,11 @@
         line-height: 20px
         color: $White
         text-decoration: none
+        transition: transform .2s
         &-arrow
             padding-left: 8px
+        &:hover
+            transform: scale(1.1)
     &__tabs
         min-height: 56px
             
